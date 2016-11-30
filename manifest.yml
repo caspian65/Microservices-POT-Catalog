@@ -1,0 +1,13 @@
+---
+applications:
+- services:
+  - myMicroservicesCloudant
+  name: Microservices-CatalogAPI-CET
+  memory: 256m
+  instances: 1
+  host: Microservices-CatalogAPI-CET
+  path: .
+declared-services:
+  myMicroservicesCloudant:
+    label: cloudantNoSQLDB
+    plan: Shared
